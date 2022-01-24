@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@100;200;300&display=swap');
+
+$color1: #cd966c;
+$color2: #5b1f00;
+$color3: #ffd7ab;
+$colorBlanco: #fff;
+$colorGrisOscuro: #222;
+$sombraGrisOscuro: 0 0 5px $colorGrisOscuro;
+
+body {
+    width: 100%;
+    background-color: $color2;
+}
+
+@mixin tamaños($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//uso el map-get para aplicar margin y padding 0
+$espacios: (margin: 0,
+    padding: 0,
+);
+
+* {
+    margin: map-get($espacios, margin);
+    padding: map-get($espacios, padding);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.navegador {
+    background-color: $color2;
+}
+
+.colorMarronClaro {
+    color: $color3;
+}
+
+.custom-toggler {
+    .navbar-toggler {
+        border-color: $colorBlanco;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+.imagenPrincipalHome {
+    background-image: url(../images/centinela_principal.jpg);
+    background-position: center;
+    background-size: cover;
+    @include tamaños(100%, 650px);
+    margin-bottom: 0;
+    // creo un mapa
+    $mapaImagenHome: (size1: 40px,
+            size2: 17px,
+        );
+
+    //bucle para usar los valores del mapa
+    @each $size,
+    $font in $mapaImagenHome {
+        .size--#{$size} {
+            color: $color3;
+            text-shadow: $sombraGrisOscuro;
+            font-size: $font;
+        }
+    }
+}
+
+.imgCarrusel {
+    @include tamaños(100%, 260px);
+    top: 100px;
+}
+
+.tituloTurismo {
+    font-size: 26px;
+    top: 100px;
+    height: 50px;
+}
+
+.parrafoTurismo {
+    font-size: 14px;
+    height: 140px;
+}
+
+.seccionUbicacionTuristica {
+    @include tamaños(100%, 500px);
+}
+
+@media only screen and (min-width: 1200px) {
+    .imagenPrincipalHome {
+        height: 900px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .tituloTurismo {
+        font-size: 22px;
+        top: 100px;
+        height: 50px;
+    }
+
+    .parrafoTurismo {
+        height: 180px;
+    }
+
+    .imgCarrusel {
+        height: 180px;
+    }
+
+}
+
+@media only screen and (max-width:767px) and (min-width: 480px) {
+    .imgCarrusel {
+        height: 300px;
+    }
+
+    .seccionUbicacionTuristica {
+        height: 550px;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .imagenPrincipalHome {
+        height: 300px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:479px) and (min-width:360px) {
+    .imgCarrusel {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width:359px) {
+    .seccionUbicacionTuristica {
+        height: 600px;
+    }
+}
+
+.mainTurismo {
+    background-color: $color3;
+    color: $color2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mainConsulta {
+    height: 800px;
+    background-color: $color3;
+}
+
+.tituloConsulta {
+    text-align: center;
+    font-size: 30px;
+    color: $color2;
+}
+
+.nombreyapellido {
+    font-size: 15px;
+}
+
+// aca uso un extend
+.divConsulta {
+    margin-bottom: 20px;
+}
+
+.tituloPpalTurismo {
+    text-align: center;
+    color: $color2;
+    font-size: 50px;
+    margin: 20px
+}
+
+.tituloConsulta {
+    @extend .divConsulta;
+}
+
+// fin del uso del extend
+.linkRedesSociales img {
+    height: 25px;
+    width: 25px;
+}
+
+.linkRedesSociales img:hover {
+    height: 30px;
+    width: 30px;
+}
+
+a:hover {
+    color: #cd966c;
+    text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    font-size: 25px;
+    padding: 0;
+}
+
+a.agrandarLink,
+a.agrandarLink:after,
+a.agrandarLink:before {
+    transition: all 0.5s;
+}
+
+a.agrandarLink:hover {
+    font-size: 25px;
+    padding: 0;
+}
+
+.linkRedesSociales img,
+.linkRedesSociales img:after,
+.linkRedesSociales img:before {
+    transition: all 0.5s;
+}
+
+.enlacesFooter ul li a,
+.enlacesFooter ul li a:after,
+.enlacesFooter ul li a:before {
+    transition: all 0.5s;
+}
+
+.enlacesFooter ul li a:hover {
+    font-size: 15px;
+}
+
+.linkRedesSociales img {
+    height: 25px;
+    width: 25px;
+}
+
+.linkRedesSociales img:hover {
+    height: 30px;
+    width: 30px;
+}
+
+.mainNosotros {
+    height: 800px;
+}
+
+.mainNosotros {
+    background-color: $color3;
+
+    div {
+        h2 {
+            color: $color2;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        p {
+            color: $color2;
+            text-align: center;
+            font-size: 17px
+        }
+    }
+}
+
+.mainGastronomia {
+    background-color: $color3;
+    color: $color2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tituloGastronomia {
+    @extend .tituloTurismo;
+}
+
+.parrafoGastronomia {
+    @extend .parrafoTurismo;
+}
+
+@import "_header";
+@import "_footer";
