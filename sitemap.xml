@@ -8,19 +8,34 @@
 
 
 <url>
-  <loc>https://leandro22sep.github.io/Desafio7SASS2-SEO/index.html</loc>
-  <lastmod>2022-01-19T17:07:47+00:00</lastmod>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://leandro22sep.github.io/Desafio7SASS2-SEO/secciones/turismo.html</loc>
-  <lastmod>2022-01-19T17:07:47+00:00</lastmod>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/secciones/nosotros.html</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://leandro22sep.github.io/Desafio7SASS2-SEO/secciones/consulta.html</loc>
-  <lastmod>2022-01-19T17:07:47+00:00</lastmod>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/secciones/turismo.html</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/secciones/gastronomia.html</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/secciones/consulta.html</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://leandro22sep.github.io/TerceraEntregaDesafio-RomeroFuentesLeandro/index.html</loc>
+  <lastmod>2022-01-24T07:07:02+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
